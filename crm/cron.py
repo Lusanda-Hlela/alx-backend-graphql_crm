@@ -1,5 +1,9 @@
 from datetime import datetime
 from crm.models import Product
+from gql.transport.requests import RequestsHTTPTransport
+from gql import
+
+# ["from gql.transport.requests import RequestsHTTPTransport", "from gql import"]
 
 def log_crm_heartbeat():
     # Log the heartbeat message
@@ -53,3 +57,5 @@ def update_low_stock():
             'success': f'Error: {str(e)}',
             'updated_products': []
         }
+
+# ["from gql.transport.requests import RequestsHTTPTransport", "from gql import"]
