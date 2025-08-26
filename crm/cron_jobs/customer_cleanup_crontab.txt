@@ -1,3 +1,4 @@
 0 2 * * 0 /absolute/path/to/your/project/crm/cron_jobs/clean_inactive_customers.sh
 
+0 8 * * * /usr/bin/python3 46280\Documents\ALX\ProDev Back End\projects\alx-backend-graphql_crm\crm\cron_jobs
 ["alx-backend-graphql_crm/crm/cron_jobs/clean_inactive_customers.sh"]
