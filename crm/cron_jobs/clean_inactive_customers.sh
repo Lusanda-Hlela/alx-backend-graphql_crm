@@ -23,3 +23,4 @@ deleted, _ = to_delete.delete()
 print(deleted)
 ")
 
+# ["count"]
