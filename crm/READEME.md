@@ -1,12 +1,12 @@
-# CRM Project Setup
+# CRM Celery Setup
 
-This document explains how to set up and run the CRM project with GraphQL, Celery, and Redis.
+This project uses **Celery + Celery Beat** to schedule background tasks.
 
----
+## Setup Instructions
 
-## 1. Install Dependencies
-
-Ensure you are in the virtual environment:
-
+### 1. Install Redis
+Ensure Redis is running locally:
 ```bash
-source virt/Scripts/activate   # Windows: virt\Scripts\activate
+sudo apt install redis-server
+sudo systemctl enable redis
+sudo systemctl start redis
