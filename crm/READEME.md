@@ -1,12 +1,7 @@
-# CRM Celery Setup
+Create crm/README.md with steps to:
 
-This project uses **Celery + Celery Beat** to schedule background tasks.
-
-## Setup Instructions
-
-### 1. Install Redis
-Ensure Redis is running locally:
-```bash
-sudo apt install redis-server
-sudo systemctl enable redis
-sudo systemctl start redis
+InstallRedis and dependencies.
+Run migrations (python manage.py migrate).
+Start Celery worker (celery -A crm worker -l info).
+Start Celery Beat (celery -A crm beat -l info).
+Verify logs in /tmp/crm_report_log.txt.
