@@ -6,7 +6,7 @@ from .models import Customer, Product, Order
 from .filters import CustomerFilter, ProductFilter, OrderFilter
 from django.core.exceptions import ValidationError
 import re
-
+from crm.models import Product
 
 # Types
 class CustomerType(DjangoObjectType):

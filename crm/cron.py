@@ -1,6 +1,5 @@
 # crm/cron.py
 from datetime import datetime
-from crm.models import Product
 from gql import gql, Client
 from gql.transport.requests import RequestsHTTPTransport
 
